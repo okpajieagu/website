@@ -88,7 +88,7 @@
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
-    <form onsubmit="sendEmail()">
+    <form onsubmit="sendEmail(); reset(); return false;">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
