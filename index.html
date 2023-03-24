@@ -88,14 +88,15 @@
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
-    <form onsubmit="sendEmail(); reset(); return false;">
+    <form action="https://formsubmit.co/okpajieaguchimobi@gmail.com" method="POST">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <input type="hidden" name="_next" value="thanks.html">
       <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-      <i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
-       </form>
+      <i class="fa fa-paper-plane"></i>SEND MESSAGE</button>
+    </form>
   <!-- End Contact Section -->
   </div>
   
@@ -109,8 +110,5 @@
  <!-- End footer -->
 </footer>
 
-<!-- END PAGE CONTENT -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="index.js"></script>
 </body>
 </html>
