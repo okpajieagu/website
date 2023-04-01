@@ -17,6 +17,8 @@
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {#main {margin-left: 0}}
     </style>
+    <link rel="shortcut icon" type="image/png" href="Untitled.jpeg"/>
+
   </head>
 <body class="w3-black">
 
@@ -95,8 +97,9 @@
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://okpajieagu.github.io/website/thanks.html">
-      <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+      <button class="w3-button w3-light-grey w3-padding-large" type="submit" id="send_message" onclick="soundEffects()">
       <i class="fa fa-paper-plane"></i> SEND MESSAGE </button>
+      <audio id="swoosh-sound" src="./swoosh.mp3"></audio>
     </form>
   </div>
     
@@ -109,5 +112,6 @@
  <!-- End footer -->
 </footer>
 
+<script src="./index.js"></script>
 </body>
 </html>
